@@ -10,8 +10,8 @@ self.addEventListener('install', evento=>{
     const promesa =caches.open(CACHE)
         .then(cache=>{
             return cache.addAll([
-               '/',
-                '/index.html',
+              // '/',
+                'index.html',
                 'css/main.css',
                 'img/logo.png',
                 'img/slider1.jpg',
@@ -25,7 +25,7 @@ self.addEventListener('install', evento=>{
                 'js/main.js',
                 'img/ubi.PNG',
                 'img/Innovation-bro.png',
-                '/offline.html'
+                'offline.html'
 
             ]);
         });
